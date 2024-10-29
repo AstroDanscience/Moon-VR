@@ -10,7 +10,7 @@ function init() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.xr.enabled = true;
     renderer.xr.setReferenceSpaceType('local');
-    mountRef.current.appendChild(renderer.domElement);
+    document.body.appendChild(renderer.domElement);
     
     document.body.appendChild(VRButton.createButton(renderer));
 
